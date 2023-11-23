@@ -39,7 +39,15 @@ export default function ToolBar() {
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="fixed">
         <Toolbar sx={{bgcolor: "#011c37", display: 'flex' , justifyContent: 'space-between'}}>
-        {/* <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} /> */}
+        <IconButton
+            size="large"
+            edge="start"
+            color="inherit"
+            aria-label="open drawer"
+            sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }}
+          >
+            <MenuIcon />
+          </IconButton>
           <Typography
             variant="h6"
             noWrap
