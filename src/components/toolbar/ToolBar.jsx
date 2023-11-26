@@ -12,20 +12,19 @@ export default function ToolBar({handleDrawerOpen, open}) {
   // const [anchorElUser, setAnchorElUser] = React.useState(null);
 
   return (
-    <Toolbar >
+    <Toolbar>
     <IconButton
-      color="inherit"
-      aria-label="open drawer"
+      color='inherit'
+      aria-label='open drawer'
       onClick={handleDrawerOpen}
-      edge="start"
+      edge='start'
       sx={{
         marginRight: 5,
-        ...(open && { display: 'none' }),
-      }}
-    >
+        ...(open && {display: 'none'}),
+      }}>
       <MenuIcon />
     </IconButton>
-    <Typography variant="h6" noWrap component="div">
+    <Typography variant='h6' noWrap component='div'>
       Mini variant drawer
     </Typography>
   </Toolbar>
